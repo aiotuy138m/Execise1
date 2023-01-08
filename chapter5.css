@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  /*margin不要*/
+  margin: 0 auto;
+  text-align: center;
+  /*20pxのあとに0入れ忘れ　*/
+  padding: 20px;
+  /*width: 100%;を入れてない*/
+}
+
+/*.nav-listで作成*/
+nav {
+  text-align: center;
+  /*padding: 15px 0 入れてない*/
+  margin: 0 auto;
+  /*カラーコードが異なる＃848282　*/
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+}
+
+.nav-list-item {
+  list-style: none;
+  display: inline-block;
+  /* 上でpadding入れてるからこっちはmargin: 0 20px入れる*/
+  padding: 15px 20px;
+}
+
+.main {
+  width: 800px;
+  /*heighrの設定はしていない*/
+  height: 600px;
+  margin: 50px auto;
+  /*display: flex;
+    flex-wrap: wrap;（複数行に折り返してもよいかの設定）
+    を設定している。*/
+  /*nowrap:折り返されず1行で表示
+  　wrap:折り返され複数行で表示。通常上から下に折り返され、
+  　　　　2行目以降は左から右に配置される。
+  　wrap-reverse:上記と異なり下から上に折り返される。*/
+}
+
+/*別にせずmainの設定だけで済んでいる。*/
+.line1 {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.box1 {
+  width: 200px;
+  height: 200px;
+  background-color: #e6ffe9;
+}
+
+.box2 {
+  width: 200px;
+  height: 200px;
+  background-color: #cbffd3;
+}
+
+.box3 {
+  width: 200px;
+  height: 200px;
+  background-color: #aeffbd;
+}
+
+.box4 {
+  width: 200px;
+  height: 200px;
+  background-color: #93ffab;
+}
+
+.line2 {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.box5 {
+  width: 200px;
+  height: 200px;
+  background-color: #f3ffd8;
+}
+
+.box6 {
+  width: 200px;
+  height: 200px;
+  background-color: #edffbe;
+}
+
+.box7 {
+  width: 200px;
+  height: 200px;
+  background-color: #e9ffa5;
+}
+
+.box8 {
+  width: 200px;
+  height: 200px;
+  background-color: #e4ff8d;
+}
+
+.line3 {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.box9 {
+  width: 200px;
+  height: 200px;
+  background-color: #d9e5ff;
+}
+
+.box10 {
+  width: 200px;
+  height: 200px;
+  background-color: #bad3ff;
+}
+
+.box11 {
+  width: 200px;
+  height: 200px;
+  background-color: #a4c6ff;
+}
+
+.box12 {
+  width: 200px;
+  height: 200px;
+  background-color: #8eb8ff;
+}
+
+footer {
+  /*width、height、text-align、line-height、
+  　background-colorの順に記述されてる*/
+  height: 120px;
+  background-color: #848282;
+  text-align: center;
+  width: 100%;
+  line-height: 120px;
+}
+/* 下記記載漏れ
+.footer-text {
+  color: #FFF;
+}
+*/
