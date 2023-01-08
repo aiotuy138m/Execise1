@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 400px;
+  /* width:100%;抜けてる */
+  background-image: url(img/mv.jpg);
+  background-position: bottom;
+  background-size: cover;
+}
+
+.header {
+  /*paddingのみ20px;だけ*/
+  margin: 20px 20px;
+  color: gray;
+}
+
+.blog {
+  width: 840px;
+  /*margin:50px auto; でpadding、text-alignなし*/
+  margin: 0 auto;
+  padding: 50px 0 50px 0;
+  text-align: left;
+}
+
+/*ここでまとめて設定せずに各々設定している*/
+.blog-box {
+  padding: 30px 0 30px 0;
+  margin-bottom: 30px;
+  border-bottom: 1px solid gray;
+}
+
+/*logo site textに対してそれぞれの設定なし
+　margin-bottom:30px;
+　borderbottom:1px solid #d1d1d1;
+　padding-bottom: 30px;で
+　最後のやつだけmarginなし*/
+.blog-logo {
+  display: inline-block;
+}
+
+
+.blog-site {
+  margin: -37px;
+}
