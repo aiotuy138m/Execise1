@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*main（list box）でこの部分を設定している*/
+.list {
+  width: 960px;
+  margin:50px auto;
+  list-style: none;
+  /*ここではmargin-bottom: 50pxを設定している*/
+}
+
+.list-text {
+  padding: 20px;
+  /*htmlでリスト形式で記述しているため
+  上記＋list-style: none;を追加で設定している。*/
+}
+
+.list-text:nth-child(odd) {
+  background-color: #f7f7f7;
+  /*カラーコードが#eee;*/
+}
+
+.box {
+  width: 960px;
+  margin: 50px auto;
+  /*mainで上記2つは設定しているため、
+  下記二つのみの設定*/
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box-child {
+  /*ここでbackground-colerで黄色設定している*/
+  width: 30%;
+  height: 200px;
+  margin-bottom: 40px;
+  /*margin-right: 5%;
+    margin-bottom: 40px;設定している*/
+}
+
+/*下記１ではなくfirst-child、nth-child(5)last-childで
+まとめて設定している*/
+.box-child:nth-child(1) {
+  background-color: orange;
+}
+
+/*以下記述はなく、３ｎの数にmargin-right 0;を設定
+　かつ、(-n + 3)にmargin-bottom: 0;を設定*/
+.box-child:nth-child(5) {
+  background-color: orange;
+}
+
+.box-child:nth-child(9) {
+  background-color: orange;
+}
+
+.box-child:nth-child(2) {
+  background-color: yellow;
+}
+
+.box-child:nth-child(3) {
+  background-color: yellow;
+}
+
+.box-child:nth-child(4) {
+  background-color: yellow;
+}
+
+.box-child:nth-child(6) {
+  background-color: yellow;
+}
+
+.box-child:nth-child(7) {
+  background-color: yellow;
+}
+
+.box-child:nth-child(8) {
+  background-color: yellow;
+}
